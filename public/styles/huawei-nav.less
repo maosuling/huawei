@@ -1,0 +1,219 @@
+@charset 'utf-8';
+#head{
+    background: #000000;
+    font-size: 12px;
+    height: 36px;
+}
+.nav{
+    >li{
+        float:left;
+        line-height:36px;
+        padding: 0 8px;
+        position: relative;
+
+        >a{
+            color:#afafaf;  
+        }
+
+        >a:hover{
+            color:#fff;
+        }
+    }
+
+    >li::before{
+        content:"";
+        display: inline-block;
+        width: 1px;
+        height: 10px;
+        background: #414141;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top:-5px;
+    }
+
+    >.nobefore::before{
+        content:none!important;
+    }
+
+    .nav-list{
+        padding: 0!important;
+
+        &:hover p{
+            background: #fff;
+            position: relative;
+            z-index:222 ;
+        }
+
+        &:hover span{
+            color:#f00;
+        }
+
+        p{
+            padding: 0 8px;
+        }
+
+        span{
+            color:#afafaf ;
+
+            &::after{
+                content:"";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url(../img/icon-common.svg) no-repeat -68px 8px;
+            }
+        }
+
+        &:hover span::after{
+            background-position: -81px 8px;
+        }
+
+        &:hover::before{
+            content:none;
+        }
+
+        //更多精彩
+        .subnav-more{
+            background: #fff;
+            border-radius: 15px 0 15px 15px;
+            box-shadow: 0 3px 5px 0 #ccc;
+            width: 120px;
+            text-align: center;
+            line-height: 28px;
+            padding: 8px 0 14px;
+            position: absolute;
+            z-index: 111;
+            right: 0;
+            display: none;
+            a{
+                color: #aaa;
+
+                &:hover{
+                    color:red;
+                }
+            } 
+        }
+
+        &:hover .subnav-more{
+            display: block;
+        }
+
+        //服务
+        .subnav-server{
+            background: #fff;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 3px 5px 0 #ccc;
+            width: 84px;
+            text-align: center;
+            line-height: 28px;
+            padding: 8px 0 14px;
+            position: absolute;
+            z-index: 111;
+            right: 0;
+            display: none;
+            a{
+                color: #aaa;
+
+                &:hover{
+                    color:red;
+                }
+            } 
+        }
+
+        &:hover .subnav-server{
+            display: block;
+        }
+
+        //导航
+        .subnav-bar{
+            background: #fff;
+            border-radius: 15px 0 15px 15px;
+            box-shadow: 0 3px 5px 0 #ccc;
+            width: 900px;
+            padding: 15px;
+            position: absolute;
+            z-index: 111;
+            right: 0;
+            display: none;
+
+            // &:hover .subnav-app{
+            //     display: block;
+            // }
+        }
+
+        
+        //手机
+        .subnav-app{
+            background: #fff;
+            border-radius: 15px 0 15px 15px;
+            box-shadow: 0 3px 5px 0 #ccc;
+            width: 210px;
+            padding: 15px;
+            position: absolute;
+            z-index: 111;
+            right: 0;
+            display: none;
+
+            .app{
+                margin-bottom:5px;
+            }
+            
+            .img-app{
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+            }
+
+            .app1{
+                height: 100px;
+                line-height: 15px;
+
+                .iconfont1{
+                    text-align: center;
+                    margin-top:15px;
+                    .iconfont::after{
+                        margin-top: 10px;
+                        font-size:10px;
+                        content:none;
+                        color: gray;
+                    }
+
+                    >p{
+                        padding:0;
+                    }
+                }
+                
+                >p{
+                    margin-top: 5px;
+                    line-height: 15px !important;
+                    padding:0;
+                    color:red;
+                    font-size: 13px;
+                }
+
+            }
+        }
+
+        &:hover .subnav-app{
+            display: block;
+        }
+    }
+
+    //购物车
+    .subnav-shop{
+        background: #fff;
+        border-radius: 15px 0 15px 15px;
+        box-shadow: 0 3px 5px 0 #ccc;
+        width: 210px;
+        padding: 15px;
+        position: absolute;
+        z-index: 111;
+        right: 0;
+        display: none;
+
+        // &:hover .subnav-shop{
+        //     display: block;
+        // }
+    }
+}

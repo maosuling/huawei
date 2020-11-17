@@ -1,0 +1,255 @@
+.first-main2 {
+  background: gainsboro;
+  width: 100%;
+  height: 20px;
+}
+#main {
+  background: gainsboro;
+  width: 100%;
+  margin: auto;
+}
+.first-main1 {
+  width: 1200px;
+  margin: 0 auto;
+  background: white;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.first-main1 > .p-1 {
+  display: inline-block;
+  width: 150px;
+  margin: 0 auto;
+  height: 30px;
+  line-height: 30px;
+  background: red;
+  color: white;
+  padding: 10px;
+}
+.first-main1-box {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  background: gainsboro;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.first-main1-box > span {
+  display: inline-block;
+  font-size: 45px;
+  line-height: 120px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+.second-main1 {
+  width: 1200px;
+  height: 290px;
+  margin: 0 auto;
+  background: white;
+}
+.second-main1 > .second-main1-box {
+  width: 1200px;
+  height: 290px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.second-main1 > .second-main1-box > .prev3 {
+  display: block;
+  position: absolute;
+  top: 35%;
+  width: 50px;
+  height: 50px;
+  font-size: 40px ;
+  font-weight: 100;
+  cursor: pointer;
+  z-index: 99999;
+}
+.second-main1 > .second-main1-box > .prev3:hover {
+  color: red;
+}
+.second-main1 > .second-main1-box > .next3 {
+  display: block;
+  position: absolute;
+  top: 35%;
+  right: 0px;
+  height: 50px;
+  font-size: 40px ;
+  font-weight: 100;
+  cursor: pointer;
+  z-index: 99999;
+}
+.second-main1 > .second-main1-box > .next3:hover {
+  color: red;
+}
+.second-main1 > .second-main1-box #box555 {
+  width: 1200x;
+  height: 290px;
+  position: absolute;
+}
+.second-main1 > .second-main1-box #box555 > a {
+  display: block;
+  float: left;
+  width: 240px;
+  height: 290px;
+  text-align: center;
+}
+.second-main1 > .second-main1-box #box555 > a > div {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 150px ;
+  height: 150px;
+}
+.second-main1 > .second-main1-box #box555 > a > div > img {
+  width: 150px!important;
+  height: 150px!important;
+}
+.second-main1 > .second-main1-box #box555 > a p:nth-of-type(1) {
+  margin-bottom: 8px;
+}
+.second-main1 > .second-main1-box #box555 > a p {
+  color: black;
+}
+.box3 {
+  width: 100%;
+  height: 50px;
+  background: gainsboro ;
+}
+.itemlist > .item {
+  margin: 12px;
+  overflow: hidden;
+}
+.itemlist > .item img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.itemlist > .item > div {
+  float: left;
+  margin: 10px;
+}
+#count11 {
+  margin-bottom: 30px;
+}
+.p-box22 {
+  background: white;
+}
+.shanchu {
+  text-align: center;
+  line-height: 48px;
+  margin-left: 20px;
+}
+.shanchu > a {
+  display: inline-block;
+  color: black;
+  margin-left: 20px;
+}
+.jiesuan {
+  line-height: 48px;
+  text-align: center;
+}
+.jiesuan > a {
+  display: inline-block;
+  width: 100px;
+  height: 48px ;
+  background: red ;
+  color: black;
+}
+.jisuan {
+  margin-top: 5px;
+  margin-right: 50px;
+}
+.jisuan > span > em {
+  color: red;
+}
+.jisuan > p > em {
+  color: red;
+}
+#count22 {
+  background: white;
+  margin-bottom: 20px;
+  height: 40px;
+}
+#count22 input {
+  margin-left: 20px;
+}
+#count22 span {
+  display: inline-block;
+  line-height: 40px;
+  color: gainsboro;
+}
+#count22 span:nth-of-type(1) {
+  margin-right: 100px;
+}
+#count22 span:nth-of-type(2) {
+  margin-right: 450px;
+}
+#count22 span:nth-of-type(3) {
+  margin-right: 80px;
+}
+#count22 span:nth-of-type(4) {
+  margin-right: 80px;
+}
+#count22 span:nth-of-type(5) {
+  margin-right: 80px;
+}
+.p-num {
+  float: left;
+  margin-top: 10px;
+  margin-left: 40px!important;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.p-num > input {
+  width: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.p-num > span {
+  display: inline-block;
+  font-size: 18px;
+  width: 15px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  cursor: pointer;
+}
+.p-price {
+  margin-left: 180px!important;
+}
+.p-sum {
+  float: left;
+  margin-top: 10px;
+  margin-left: 38px!important;
+  color: red;
+}
+.p-del {
+  float: left;
+  margin-top: 10px;
+  margin-left: 55px!important;
+}
+.p-box {
+  text-align: center;
+}
+.p-box > input {
+  float: left;
+  margin-top: 50px;
+}
+.p-box a {
+  display: block;
+  float: left;
+}
+.p-box a img {
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+.p-box a > span {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  color: black;
+}
