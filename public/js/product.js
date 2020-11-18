@@ -21,27 +21,27 @@ import glass from './library/glass.js';
                 <div class="left">
                     <ul class="nav">
                         <li class="nobefore"><a href="">网页</a></li>
-                        <li><a href="">华为官网</a></li>
-                        <li><a href="">荣耀官网</a></li>
-                        <li><a href="">花粉俱乐部</a></li>
-                        <li><a href="">V码(优购码)</a></li>
-                        <li><a href="">企业购</a></li>
-                        <li><a href="">Select Region</a></li>
+                        <li><a href="javascript:;">华为官网</a></li>
+                        <li><a href="javascript:;">荣耀官网</a></li>
+                        <li><a href="javascript:;">花粉俱乐部</a></li>
+                        <li><a href="javascript:;">V码(优购码)</a></li>
+                        <li><a href="javascript:;">企业购</a></li>
+                        <li><a href="javascript:;">Select Region</a></li>
                         <li class="nav-list">
                             <p><span>更多精彩</span></p>
                             <div class="subnav-more">
                                 <ul>
                                     <li>
-                                        <a href="#">EMUI </a>
+                                        <a href="javascript:;">EMUI </a>
                                     </li>
                                     <li>
-                                        <a href="#">应用市场</a>
+                                        <a href="javascript:;">应用市场</a>
                                     </li>
                                     <li>
-                                        <a href="#">华为终端云空间</a>
+                                        <a href="javascript:;">华为终端云空间</a>
                                     </li>
                                     <li>
-                                        <a href="#">开发者联盟</a>
+                                        <a href="javascript:;">开发者联盟</a>
                                     </li>
                                 </ul>
                             </div>
@@ -52,18 +52,18 @@ import glass from './library/glass.js';
     
                 <div class="right">
                     <ul class="nav">
-                        <li class="nobefore"><a href="">请登录</a></li>
-                        <li class="nobefore"><a href="">注册</a></li>
-                        <li><a href="">我的订单</a></li>
+                        <li class="nobefore"><a href="javascript:;">请登录</a></li>
+                        <li class="nobefore"><a href="javascript:;">注册</a></li>
+                        <li><a href="javascript:;">我的订单</a></li>
                         <li class="nav-list">
                             <p><span>客服服务</span></p>
                             <div class="subnav-server">
                                 <ul>
                                     <li>
-                                        <a href="#">服务中心</a>
+                                        <a href="javascript:;">服务中心</a>
                                     </li>
                                     <li>
-                                        <a href="#">联系客服</a>
+                                        <a href="javascript:;">联系客服</a>
                                     </li>
                                 </ul>
                             </div>
@@ -78,7 +78,7 @@ import glass from './library/glass.js';
                             <div class="subnav-app">
                                 <ul>
                                     <li class="app clearfix">
-                                        <a href="" class="left">
+                                        <a href="javascript:;" class="left">
                                             <img src="../img/1.png" alt="" class="img-app">
                                         </a> 
                                         <div class="left app1">
@@ -91,7 +91,7 @@ import glass from './library/glass.js';
                                         </div>                                                                                                    
                                     </li>
                                     <li class="app clearfix">
-                                        <a href="" class="left">
+                                        <a href="javascript:;" class="left">
                                             <img src="../img/1.png" alt="" class="img-app">
                                         </a> 
                                         <div class="left app1">
@@ -104,7 +104,7 @@ import glass from './library/glass.js';
                                         </div>                                                                                                    
                                     </li> 
                                     <li class="app clearfix">
-                                        <a href="" class="left">
+                                        <a href="javascript:;" class="left">
                                             <img src="../img/1.png" alt="" class="img-app">
                                         </a> 
                                         <div class="left app1">
@@ -134,23 +134,23 @@ import glass from './library/glass.js';
                 
                 <ul class="second-left-list">
                     <li>
-                        <a href="#" class="imgmargin">
+                        <a href="javascript:;" class="imgmargin">
                             <img src="../img/hwzq.png"  alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="imgmargin">
+                        <a href="javascript:;" class="imgmargin">
                            <img src="../img/ryzq.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="#">P40系列</a>
+                        <a href="javascript:;">P40系列</a>
                     </li>
                     <li>
-                        <a href="#">荣耀30</a>
+                        <a href="javascript:;">荣耀30</a>
                     </li>
                     <li>
-                        <a href="#">安心居家</a>
+                        <a href="javascript:;">安心居家</a>
                     </li>
                 </ul>
                 
@@ -159,8 +159,8 @@ import glass from './library/glass.js';
                     <div class="search">
                         <form action="">
                                 <input type="text" class="secondnav-right-text"><input type="submit"value=" " class="secondnav-right-but">
-                                <a href="#" style="color: lightgray;position:absolute;left: 60px;top: 8px;font-size: 12px;">Mate 40系列</a>
-                                <a href="#" style="color: lightgray;position:absolute;left: 150px;top: 8px;font-size: 12px;">荣耀30</a>
+                                <a href="javascript:;" style="color: lightgray;position:absolute;left: 60px;top: 8px;font-size: 12px;">Mate 40系列</a>
+                                <a href="javascript:;" style="color: lightgray;position:absolute;left: 150px;top: 8px;font-size: 12px;">荣耀30</a>
                         </form>    
                     </div>
                 </div>
@@ -169,11 +169,11 @@ import glass from './library/glass.js';
         <div class="hr10"></div>
         <div class="g">
             <div class="g-1">
-                <a href="">首页</a>
+                <a href="javascript:;">首页</a>
                 &nbsp;>&nbsp;
-                <a href="">手机</a>
+                <a href="javascript:;">手机</a>
                 &nbsp;>&nbsp;
-                <a href="">HUAWEI Mate系列</a>
+                <a href="javascript:;">HUAWEI Mate系列</a>
                 &nbsp;>&nbsp;
                 <span>HUAWEI Mate 40 Pro+ 5G 全网通 12GB+256GB（陶瓷黑）</span>
             </div>
