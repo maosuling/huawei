@@ -35,35 +35,97 @@ import { baseUrl } from './library/config.js';
 
                     let picture = JSON.parse(elm.picture);
 
-                    template += `<li class="item">
-                    <div class="p-box clearfix">
-                        <input type="checkbox" class="cek" data-pass="flase"> 
-                        <a href="javascript:;" class="clearfix">
-                            <img src="../img/${picture[0].src}" alt="">
-                            <span> ${elm.title}</span>
+                    template += `<div class="list-body clearfix">
+                        <div class="p-check">
+                        <input type="checkbox" class="cek" data-pass="flase">
+                    </div>
+                    <div class="p-img">
+                        <a href="javascript:;">
+                            <img src="../img/${picture[0].src}" alt="" width="70px" height="70px">
                         </a>
                     </div>
-                    <div class="p-price">
-                        <span>￥<i>${(elm.price).toFixed(2)}</i></span>
+                    <div class="p-title">
+                        <a href="javascript:;">${elm.title}</a>
                     </div>
+                    <div class="p-price">${(elm.price).toFixed(2)}</div>
                     <div class="p-num">
-                        <span class="box11">-</span>
-                        <input type="text" value="${arr[0].num}" min="1" max="${elm.num}">
-                        <span class="box22">+</span>
+                        <input type="number" value="${arr[0].num}" min="1" max="${elm.num}">
                     </div>
-                    <div class="p-sum">
-                        <span>￥<i>${(elm.price*arr[0].num).toFixed(2)}</i></span>
-                    </div>
+                    <div class="p-sum">${(elm.price*arr[0].num).toFixed(2)}元</div>
                     <div class="p-del">
-                        <a href="javascript:;"  data-num="${elm.id}">删除</a>
+                        <a href="javascript:;" data-num="${elm.id}">删除</a>
                     </div>
-                </li>`;
+                    </div>
+                        `;
+                    });
+
+                // 渲染页面
+                $('.list-body2').append(template);
+
+                $('.list-body .p-del a').on('click',function () {
+                    let a = $(this).attr('data-num');
+                    for (let i = 0; i < shop.length; i++) {
+                        if (shop[i].id == a) {
+                            shop.splice(i,1);
+                            cookie.set('shop',JSON.stringify(shop),1);
+                            location.reload();
+                        }
+                    }
+                    
                 });
 
-                //渲染页面
-                $('.itemlist').append(template);
+                    $('.p-num>input').on('change',function () {
+                        let price = ($(this).parent().prev().text()*$(this).val()).toFixed(2);
+                        $(this).parent().next().text(`${price}元`);
+                    });
 
-                //点击事件
+                    $('.cek').on('click',function () {
+                        // 获取所有商品的复选框
+                        let shopbtn = $(this).closest('.shopcar').find('.cek');
+
+                        // 获取被勾选的复选框
+                        let shopbtnC = $(this).closest('.shopcar').find('.cek:checked');
+
+                        // 获取全选复选框
+                        let shopS = $(this).closest('.shopcar').find('.allck');
+                    
+                        if (shopbtn.length == shopbtnC.length) {
+                            shopS.prop('checked',true);
+                            Totalprice();
+                        } else {
+                            shopS.prop('checked',false);
+                            Totalprice();
+                        }
+                    });
+
+                    $('.allck').on('click',function () {
+                        if ($(this).prop('checked')) {
+                            $(this).closest('.shopcar').find('.cek').prop('checked',true);
+                            Totalprice();
+                        } else {
+                            $(this).closest('.shopcar').find('.cek').prop('checked',false);
+                            Totalprice();
+                        }
+                    });
+
+                    function Totalprice () {
+                        $('.list-body').each(function () {
+                            let oprice = 0;
+                            
+                            $('.cek').each(function () {
+
+                                if ($(this).is(':checked')) {
+                                    let price = parseInt($(this).closest('.list-body').find('.p-sum').text());
+                                    
+                                    oprice += price;
+                                    
+                                }
+                                
+                                $('.settle p').html(`<span>合计：</span>${oprice.toFixed(2)}<span>元</span>
+                                <a href="javascript:;">去结算</a>`);
+                        });
+                     });
+                 }                            
             }
         });
     }

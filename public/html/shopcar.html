@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <script src="../js/shopcar.js" type="module"></script>
 </head>
-<body class="shopcar">
+<body>
     <div id="head" style="background:gainsboro">
         <div class="content nav-top">
             <div class="left">
@@ -165,67 +165,56 @@
     <div class="first-main2"></div>
     <!--  -->
     <div id="main">
+        <div class="banxin content">
+            <div class="shopcar">
+                <div class="list-head2 clearfix">
+                    <div class="p-check">
+                        <input type="checkbox" class="allck">
+                        全选
+                    </div>
+                    <div class="p-img">&nbsp;</div>
+                    <div class="p-title">商品名称</div>
+                    <div class="p-price">单价</div>
+                    <div class="p-num">数量</div>
+                    <div class="p-sum">小计</div>
+                    <div class="p-del">操作</div>
+                </div>
+                <div class="list-body2">
+                    <!-- <div class="list-body clearfix"> -->
+                            <!-- <div class="p-check">
+                                <input type="checkbox">
+                            </div>
+                            <div class="p-img">
+                                <a href="javascript:;">
+                                    <img src="../img/mi10-0.jpg" alt="" width="70px" height="70px">
+                                </a>
+                            </div>
+                            <div class="p-title">
+                                <a href="javascript:;">小米10</a>
+                            </div>
+                            <div class="p-price">123123</div>
+                            <div class="p-num">
+                                <input type="number" value="1" min="1" max="5">
+                            </div>
+                            <div class="p-sum">1232元</div>
+                            <div class="p-del">
+                                <a href="javascript:;">删除</a>
+                            </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="settle clearfix">
+                <div>
+                    <p>
+                        <span>合计：</span>0.00<span>元</span>
+                        <a href="javascript:;">去结算</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div id="main1">
         <div class="content">
-            <div id="count22">
-                <div class="content">
-                    <div class="p-box33">
-                        <div class="quanxuan">
-                            <input type="checkbox" class="allck">
-                            <span>全选</span>
-                            <span>商品</span>
-                            <span>单价</span>
-                            <span>数量</span>
-                            <span>小计</span>
-                            <span>操作</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="first-main1 itemlist">
-                <!-- <li class="item" id="item-${elm.id}">
-                    <div class="p-box clearfix">
-                        <input type="checkbox" id="check-${elm.id}"> 
-                        <a href="javascript:;" class="clearfix">
-                            <img src="../img/${picture[0].src}" alt="">
-                            <span> ${elm.title}</span>
-                        </a>
-                    </div>
-                    <div class="p-price">
-                        <span>￥<i id="price-${elm.id}">${(elm.price).toFixed(2)}</i></span>
-                    </div>
-                    <div class="p-num">
-                        <span class="box11" id="reduce-${elm.id}" class="reduce">-</span>
-                        <input type="text"  id="number-${elm.id}" value="${arr[0].num}" min="1" max="${elm.num}">
-                        <span class="box22" id="plus-${elm.id}" class="plus">+</span>
-                    </div>
-                    <div class="p-sum">
-                        <span>￥<i id="sum-${elm.id}">${(elm.price*arr[0].num).toFixed(2)}</i></span>
-                    </div>
-                    <div class="p-del">
-                        <a href="javascript:;" id="del-${elm.id}" class="del">删除</a>
-                    </div>
-                </li> -->
-            </div>
-            <!--  -->
-            <div id="count11">
-                <div class="content">
-                    <div class="p-box22 clearfix">
-                        <div class="left shanchu">
-                            <input type="checkbox" id="p111" class="allck">
-                            <span>全选</span>
-                            <a href="">删除</a>
-                        </div>
-                        <div class="jiesuan right">
-                            <a href="">立即结算</a>
-                        </div>
-                        <div class="jisuan right">
-                            <span>共计￥<em class="total-price">0.00</em></span>
-                            <p>已选择<em>1</em>件商品</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
             <h2>热销推介</h2>
             <div class="second-main1">
                 <div class="second-main1-box content">
@@ -308,18 +297,6 @@
             <div class="box3"></div>
         </div>
     </div>
-        <!-- </div>
-        <li class="zhl">
-            <a href="">
-                <div>
-                    <img src="../img/5-7.png" alt="">
-                </div>
-                <p>HUAWEI P40 Pro</p>
-                <p>￥36488</p>
-            </a>
-        </li>
-    </div> -->
-    <!--  -->
     <div id="footer">
         <div class="container">
              <div>
